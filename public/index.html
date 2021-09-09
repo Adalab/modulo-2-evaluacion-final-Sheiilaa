@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyecto Final</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Buscador de series</h1>
+      </header>
+
+      <main>
+        <section>
+          <form action="GET" method="post">
+            <input
+              type="text"
+              name="Peliculas"
+              id="peliculas"
+              placeholder="Ejemplo: la casa de papel"
+              class="js_search-films"
+            />
+            <input type="submit" value="Buscar" class="js_button" />
+            <input type="reset" value="resetear" class="js_reset" />
+          </form>
+        </section>
+        <section>
+          <h2>Mis series favoritas</h2>
+          <ul class="js_favorite-films"></ul>
+          <div>
+            <h2>Listado de series</h2>
+            <ul class="js_films"></ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <small>Buscador de series. Proyecto adalab Modulo 2 JavaScript</small>
+        <small>Sheila Arenillas </small>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
