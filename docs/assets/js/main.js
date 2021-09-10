@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const searchFilm=document.querySelector(".js_search-films"),button=document.querySelector(".js_button"),reset=document.querySelector(".js_reset"),films=document.querySelector(".js_films"),favoriteFilms=document.querySelector(".js_favorite-films");let globalData=[];function getFilms(){let e=searchFilm.value;fetch("//api.tvmaze.com/search/shows?q="+e).then(e=>e.json()).then(e=>{for(let t of e)globalData.push(t)})}button.addEventListener("click",getFilms);

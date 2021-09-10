@@ -1,20 +1,60 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0; }
 
-.page__header {
+.results {
+  padding-top: 20px;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem; }
+  flex-direction: row;
+  justify-content: space-around; }
 
-.page__footer {
+.favorites {
+  font-size: 8px;
+  color: #204e35;
+  width: 20vw; }
+
+.series {
+  color: #1d4a4e;
+  width: 70vw; }
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: #ececec;
+  font-family: "Varela Round", sans-serif;
+  text-align: center; }
+
+.tittle {
+  font-size: 50px;
+  color: #1b2f50;
+  font-family: "Rampart One", cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100vw;
-  padding: 1rem;
-  color: #999; }
+  font-size: 14px;
+  color: #505050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .main__list {
   padding-left: 2rem;

@@ -1,5 +1,16 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: #ececec;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+.tittle {
+  font-size: 50px;
+  color: #1b2f50;
+  font-family: "Rampart One", cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

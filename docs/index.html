@@ -3,32 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>Proyecto Final</title>
+    <!-- Icono -->
+    <link rel="icon" href="./assets/images/icono.png" />
+    <!-- Letras  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Otra página del starter kit</h1>
+      <header>
+        <h1 class="tittle">Buscador de series</h1>
       </header>
 
       <main>
-        <p>
-          Esta es otra segunda página del Starter kit. Mira el fichero
-          <code class="code">./src/html/partials/main.html</code> para cómo hemos creado el enlace
-          que te ha traído hasta aquí.
-        </p>
-      </main>
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <form action="GET" method="post">
+          <input
+            type="text"
+            name="Peliculas"
+            id="peliculas"
+            placeholder="Ejemplo: la casa de papel"
+            class="js_search-films"
+          />
+          <input type="submit" value="Buscar" class="js_button" />
+          <input type="reset" value="resetear" class="js_reset" />
+        </form>
 
-        </small>
+        <section class="results">
+          <div class="favorites">
+            <h2 tittle="favorites__tittle">Mis series favoritas</h2>
+            <ul class="js_favorite-films"></ul>
+          </div>
+          <div class="series">
+            <h2 class="series__tittle">Listado de series</h2>
+            <ul class="js_films"></ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>Buscador de series. Proyecto adalab Modulo 2 JavaScript</small>
+        <small>Sheila Arenillas </small>
       </footer>
 
     </div>
