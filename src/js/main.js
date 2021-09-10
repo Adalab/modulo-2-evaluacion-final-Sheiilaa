@@ -24,6 +24,7 @@ let favorites=[]
     .then((data) => {
        //Le decimos que el array de global data es igual a los datos que nos da el fetch
       globalData = data;
+      
 
     //Añadimos la funcion que pinta las caratulas
     paintFilms(globalData);
@@ -34,8 +35,11 @@ let favorites=[]
  //Listener del fetch 
  button.addEventListener('click', getFilms);
 
+
+
     //Creamos una función para que se nos pinta las caratulas de las series
     function paintFilms() {
+       
        //Cogemos la variable de films, para poder escribir por encima
        films.innerHTML="";
 
@@ -55,25 +59,68 @@ let favorites=[]
          //Por si la serie no tuviera imagen ponemos 
          
          if(item.show.image === null){
-            films.innerHTML+=`<li id="${item.show.id}" class="js-list-item ${isFavorite}"><div class="js-list-div"><h2 class="js-showName">${item.show.name}</h2><img class= "js-image" src=${defaultImage} /></div></li>`;
+            films.innerHTML+=`<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div><h2 class="tittle_name">${item.show.name}</h2><img class= "image" src=${defaultImage} /></div></li>`;
          } else{
-            films.innerHTML += `<li id="${item.show.id}" class="js-list-item ${isFavorite}"><div class="js-list-div"><h2 class="js-showName">${item.show.name}</h2><img class="js-image" src="${item.show.image.medium}"/></div></li>`;
+            films.innerHTML += `<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div><h2 class="tittle_name">${item.show.name}</h2><img class="image" src="${item.show.image.medium}"/></div></li>`;
     }
+    listenCover();
+    
   }
-  addListenerToCovers();
-}
 
-function addListenerToCovers() {
-   const allCovers = document.querySelectorAll(".js-list-item");
-   for (const cover of allCovers) {
-     cover.addEventListener("click", handleClickCard);
+}
+function listenCover(){
+   const allCovers=document.querySelectorAll('.js-list_item');
+   for (let cover of allCovers){
+      cover.addEventListener('click', handleClickCover)
    }
- }
- //Favoritos
+}
  
 
+ //Favoritos
+ function handleClickCover(event) {
+    
+   
+   //Primero verificamos que li esta siendo elegida por el usuario
+   const selectedCover = event.currentTarget;
+ 
+   //obtenemos esta id
+   const coverId = parseInt(selectedCover.id);
+ 
+   //Buscamos la id en la variable global data (el cual es un array)
+   const filmInfo = globalData.find((filmItem) => filmItem.show.id === coverId);
+ 
+   // Buscar si la caratula esta en favoritos
+   const ifThis = favorites.find(
+     (favoriteId) => favoriteId.show.id === coverId
+   );
+ 
+   if (ifThis === undefined) {
+     //si la caratula en la que se ha hecho click no está en el array de favoritos: añadimos a favoritos
+     favorites.push(filmInfo);
+   } else {
+     //Si está, filtramos para ello usamos e metodo .filter
+     favorites = favorites.filter((favoriteId) => favoriteId.show.id !== coverId);
+   }
+   printFavorite();
+ }
+ //Haremos la función para añadir los favoritos 
+ function printFavorite() {
+
+   favoriteFilms.innerHTML = "";
+ 
+    for (const favorite of favorites) {
+      if (favorite.show.image === null) {
+         //Si no tiene caratula
+       favoriteFilms.innerHTML += `<li id="${favorite.show.id}" class="list__favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src=${defaultImage}/><i id="${favorite.show.id}"></i></div></li>`;
+     } else {
+       favoriteFilms.innerHTML += `<li data-id="${favorite.show.id}" class="list_favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src="${favorite.show.image.medium}"/><i id="${favorite.show.id}"></i></div></li>`;
+      }
+    }
+    
+ }
 
 
+ 
         
 
 

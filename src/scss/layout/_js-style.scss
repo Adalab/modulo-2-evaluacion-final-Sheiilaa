@@ -1,25 +1,32 @@
-.js-list-item {
-  list-style: none;
-  display: inline-block;
-  height: 380px;
-  width: 240px;
-  border: solid 2px #474c90;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  text-align: center;
+list_item {
 }
 
-.js-showName {
-  width: 100%;
-  text-align: center;
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 24px;
+.tittle_name {
 }
-.js-image {
-  width: 180px;
-  height: 270px;
-  padding-top: 30px;
-  text-align: center;
+.image {
+}
+//EStilos de los favoritos
+
+.list_favoritos {
+  list-style: none;
+  padding-top: 20px;
+}
+.div_favoritos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title_favoritos {
+  font-size: 18px;
+}
+.img_favoritos {
+  width: 90px;
+  height: 135px;
+  padding-top: 10px;
+}
+.fa-times-circle {
+  padding-top: 10px;
+  color: gray;
+  cursor: pointer;
 }
