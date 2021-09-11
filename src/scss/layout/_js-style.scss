@@ -1,16 +1,22 @@
-list_item {
-}
-
 .tittle_name {
 }
 .image {
+  width: 100px;
 }
-//EStilos de los favoritos
+//Estilos de los favoritos
 
+.favorito {
+  background-color: #5b78a7;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 .list_favoritos {
   list-style: none;
   padding-top: 20px;
 }
+
 .div_favoritos {
   display: flex;
   flex-direction: column;
@@ -24,9 +30,4 @@ list_item {
   width: 90px;
   height: 135px;
   padding-top: 10px;
-}
-.fa-times-circle {
-  padding-top: 10px;
-  color: gray;
-  cursor: pointer;
 }
