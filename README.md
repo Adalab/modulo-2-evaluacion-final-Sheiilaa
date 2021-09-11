@@ -14,7 +14,10 @@ In addition we have made the BONUS, among them to make a reset button and to giv
 To be able to make this web, we have used the adalab web starter kit, and thus to make the corresponding partials.
 The difficulty of this project has been to begin to layout in JS, since it is something quite new. Even so, we have used arrays, objects, conditionals, functions, loops and events, in order to make it.
 I hope you like the work achieved.
-And for more questions you can contact me through this GitHub or linkedin linkedin.com/in/sheila-arenillas-94b1191b3
+And for more questions you can contact me through this GitHub or linkedin [LinkedIn](https://linkedin.com/in/sheila-arenillas-94b1191b3/)
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://gulpjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
 
 **VERSIÓN EN ESPAÑOL**
 
@@ -34,4 +37,7 @@ Además hemos realizado los BONUS, entre ellos hacer un boton de reset y darle e
 Para poder realizar esta web, hemos usado El adalab web starter kit, y así realizar los partials correspondientes.
 La dificultar de este proyecto ha sido el empezar a maquetar en JS, ya que es algo bastante novedoso. Aún asi, hemos usado arrays, objetos, condicionales, funciones, bucles y eventos, para así poder realizarlo.
 Espero que les guste el trabajo conseguido.
-Y para mas dudas pueden contactar conmigo a través de este GitHub o linkedin linkedin.com/in/sheila-arenillas-94b1191b3
+Y para mas dudas pueden contactar conmigo a través de este GitHub o linkedin [LinkedIn](https://linkedin.com/in/sheila-arenillas-94b1191b3/)
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://gulpjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
