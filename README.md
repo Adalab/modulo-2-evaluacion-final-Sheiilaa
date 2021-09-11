@@ -1,124 +1,37 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+#Welcome to the evaluation of Javascript module 2
+In this case I had to face a JS project.
+The operation of the web was as follows:
 
-# Adalab web starter kit
+**1) Search:** We write in the empty input created for the search and when we click, the application will connect to the API to perform the search for series. We obtain as an answer a list of filtered elements according to what we have written in the input.
+**2) List of the series:** We will have to pick up the answer that the api gives us to be able to "paint" the covers of these series, in case they don't have a cover, a predefined one will be put.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+**3) Section of favorites:** We will be able to indicate which are our favorite series. For it we will click on each one of them and it will be added to the list of favorites.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+**4) Local storage:** It is necessary to store the list of favorites in the localStorage, therefore when reloading the page or leaving this one they will remain saved.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+In addition we have made the BONUS, among them to make a reset button and to give styles of layout and CSS to the page.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+To be able to make this web, we have used the adalab web starter kit, and thus to make the corresponding partials.
+The difficulty of this project has been to begin to layout in JS, since it is something quite new. Even so, we have used arrays, objects, conditionals, functions, loops and events, in order to make it.
+I hope you like the work achieved.
+And for more questions you can contact me through this GitHub or linkedin linkedin.com/in/sheila-arenillas-94b1191b3
 
-## Guía de inicio rápido
+**VERSIÓN EN ESPAÑOL**
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+#Bienvenidos a la evaluación del modulo 2, de Javascript.
+En este caso me he tenido que enfrentar a un proyecto de JS.
+El funcionamiento de la web era la siguiente:
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+**1) Busqueda:** Se escribe en el input vacío creado para la búsqueda y al hacer click, la aplicación se conectará al API para realizar la búsqueda de series. Obtenemos como respuesta un listado de elementos filtrados según lo que hayamos escrito en el input.
+**2) Listado de las series:** Tendremos que recoger la respuesta que nos da la api para poder "pintar" las caratulas de estas series, en caso de que no tengan caratula, se le pondrá una predefinida
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+**3) Sección de favoritos:** Podremos indicar cuáles son nuestras series favoritas. Para ello haremos click sobre cada una de ellas y se añadira a la lista de favoritos.
 
-```bash
-npm install
-```
+**4) Almacenamiento local:** Hay que almacenar el listado de favoritos en el localStorage, por lo tanto al recargar la página o salirte de esta se quedarán guardados.
 
-### Pasos para arrancar el proyecto:
+Además hemos realizado los BONUS, entre ellos hacer un boton de reset y darle estilos de maquetación y CSS a la pagina.
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
-
-```bash
-npm start
-```
-
-Este comando:
-
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
-
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run docs
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+Para poder realizar esta web, hemos usado El adalab web starter kit, y así realizar los partials correspondientes.
+La dificultar de este proyecto ha sido el empezar a maquetar en JS, ya que es algo bastante novedoso. Aún asi, hemos usado arrays, objetos, condicionales, funciones, bucles y eventos, para así poder realizarlo.
+Espero que les guste el trabajo conseguido.
+Y para mas dudas pueden contactar conmigo a través de este GitHub o linkedin linkedin.com/in/sheila-arenillas-94b1191b3
