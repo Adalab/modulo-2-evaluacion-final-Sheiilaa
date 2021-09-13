@@ -42,7 +42,7 @@ ul {
   .button:hover {
     color: white;
     transform: scale(1.2);
-    background-color: #c391c5; }
+    background-color: #7d97b9; }
 
 .results {
   padding-top: 30px;
@@ -100,7 +100,7 @@ ul {
   list-style: none; }
 
 .favorito {
-  background-color: #8912f850;
+  background-color: #29a7f048;
   color: #ecf3e7;
   border-radius: 10px;
   margin-bottom: 10px; }
@@ -116,7 +116,8 @@ ul {
   justify-content: center; }
 
 .title_favoritos {
-  font-size: 14px; }
+  font-size: 14px;
+  color: #ecf3e7; }
 
 .img_favoritos {
   width: 110px;
