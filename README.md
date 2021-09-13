@@ -4,6 +4,7 @@ In this case I had to face a JS project.
 The operation of the web was as follows:
 
 **1) Search:** We write in the empty input created for the search and when we click, the application will connect to the API to perform the search for series. We obtain as an answer a list of filtered elements according to what we have written in the input.
+
 **2) List of the series:** We will have to pick up the answer that the api gives us to be able to "paint" the covers of these series, in case they don't have a cover, a predefined one will be put.
 
 **3) Section of favorites:** We will be able to indicate which are our favorite series. For it we will click on each one of them and it will be added to the list of favorites.
@@ -28,6 +29,7 @@ En este caso me he tenido que enfrentar a un proyecto de JS.
 El funcionamiento de la web era la siguiente:
 
 **1) Busqueda:** Se escribe en el input vacío creado para la búsqueda y al hacer click, la aplicación se conectará al API para realizar la búsqueda de series. Obtenemos como respuesta un listado de elementos filtrados según lo que hayamos escrito en el input.
+
 **2) Listado de las series:** Tendremos que recoger la respuesta que nos da la api para poder "pintar" las caratulas de estas series, en caso de que no tengan caratula, se le pondrá una predefinida
 
 **3) Sección de favoritos:** Podremos indicar cuáles son nuestras series favoritas. Para ello haremos click sobre cada una de ellas y se añadira a la lista de favoritos.

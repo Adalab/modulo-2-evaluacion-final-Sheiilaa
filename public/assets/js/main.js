@@ -111,9 +111,9 @@ function handleClickCover(event) {
    
       for (const favorite of favorites) {
         if (favorite.show.image === null) {
-           favoriteFilms.innerHTML += `<li id="${favorite.show.id}" class="list__favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src=${defaultImage}/><i id="${favorite.show.id}"></i></div></li>`;
+           favoriteFilms.innerHTML += `<li id="${favorite.show.id}" class="list__favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src=${defaultImage}/><i id="${favorite.show.id}"class="fas fa-times-circle remove_favorito"></i></div></li>`;
        } else {
-         favoriteFilms.innerHTML += `<li item-id="${favorite.show.id}" class="list_favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src="${favorite.show.image.medium}"/><i id="${favorite.show.id}"></i></div></li>`;
+         favoriteFilms.innerHTML += `<li item-id="${favorite.show.id}" class="list_favoritos"><div class="div_favoritos"><h1 class="title_favoritos">${favorite.show.name}</h1><img class="img_favoritos" src="${favorite.show.image.medium}"/><i id="${favorite.show.id}"class="fas fa-times-circle remove_favorito"></i></div></li>`;
         }
       }
       
@@ -138,7 +138,6 @@ function handleClickCover(event) {
   }
   savedFilms();
  //Boton de borrar:
- 
  function resetFav(){
     //Ponemos el array de los favoritos vacío
     favoriteFilms.innerHTML='';
@@ -146,12 +145,17 @@ function handleClickCover(event) {
     localStorage.removeItem('favorites');
     paintFilms()
  
- 
   }
  
   reset.addEventListener('click', resetFav);
  
-  
+  //Haremos el icono de borrar --- Sin funcionalidad
+//  function resetIcon(){
+//     const iconos= document.querySelectorAll('.remove_favoritos');
+//     for(icon of iconos){
+//         icon.addEventListener('click',resetFav);
+//     }
+// }
 
 
 
