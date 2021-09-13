@@ -77,8 +77,10 @@ function listenCover(){
 
  function handleClickCover(event) {
   event.preventDefault();
+ 
    //Primero verificamos que li esta siendo elegida por el usuario, ademas de obtener su id
    const selectedCover = parseInt(event.currentTarget.id);
+   
   
    //Buscamos la id en la variable global data (el cual es un array)
    const filmInfo = globalData.find((filmItem) => filmItem.show.id === selectedCover);
@@ -87,24 +89,18 @@ function listenCover(){
    const ifThis = favorites.find(
      (favoriteId) => favoriteId.show.id === selectedCover
    );
- //Vamos a coger la clase "div_list" para poder añadirle otra clase y que se pinte el fondo de color
-  const div =document.querySelector('.div_list');
+  
   
    if (ifThis === undefined) {
      //si la caratula en la que se ha hecho click no está en el array de favoritos: añadimos a favoritos
-     favorites.push(filmInfo);
-     //Ademas le decimos que le ponga la clase favorito
-     div.classList.remove('favorito');
-     div.classList.add('favorito');
-
+     favorites.push(filmInfo);  
    } else {
      //Si está, filtramos para ello usamos e metodo .filter
-     favorites = favorites.filter((favoriteId) => favoriteId.show.id !== selectedCover);
-      div.classList.remove('favorito');
+     favorites = favorites.filter((favoriteId) => favoriteId.show.id !== selectedCover); 
    }
   
    printFavorite(); // esta es la función para pintar los favoritos
-
+  paintFilms();
     //guardo favoritos en LS
   setLocalStorage();
   
@@ -130,16 +126,32 @@ function listenCover(){
    localStorage.setItem('favorites', JSON.stringify(favorites));
  }
  
- function getLocalStorage() {
+ function savedFilms() {
+   const local = JSON.parse(localStorage.getItem('favorites'));
+   if(local!==null){
+     favorites=local
+   }
    //recupero el array de favoritos almacenado en ls
-   favorites = JSON.parse(localStorage.getItem('favorites'));
+  
    //pinto la lista de favoritos con lo almacenado en ls
-   printFavorite();
-   
+   printFavorite(); 
+
  }
 
-
+ //Boton de borrar:
  
+ function resetFav(){
+   //Ponemos el array de los favoritos vacío
+   favoriteFilms.innerHTML='';
+   //limpiados la lista con el localStorage
+   localStorage.clear('favorites');
+   paintFilms();
+
+ }
+
+ reset.addEventListener('click', resetFav);
+
+ savedFilms();
         
 
 

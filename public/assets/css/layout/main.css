@@ -1,3 +1,31 @@
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  padding-bottom: 15px; }
+
+.label {
+  color: #017f8b;
+  font-weight: 600;
+  font-size: 18px; }
+
+.search__films {
+  height: 26px;
+  text-align: center; }
+
+.button {
+  color: #5a2f55;
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: #feceba;
+  border-radius: 21px; }
+  .button:hover {
+    color: white;
+    transform: scale(1.2);
+    background-color: #c391c5; }
+
 .results {
   padding-top: 20px;
   display: flex;
@@ -6,11 +34,11 @@
 
 .favorites {
   font-size: 8px;
-  color: #204e35;
+  color: #098f94;
   width: 20vw; }
 
 .films {
-  color: #1d4a4e;
+  color: #098f94;
   width: 60vw; }
 
 /*# sourceMappingURL=main.css.map */

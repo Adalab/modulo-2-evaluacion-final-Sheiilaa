@@ -31,17 +31,22 @@
         <h1 class="tittle">Buscador de series</h1>
       </header>
 
-      <main>
-        <form action="GET" method="post">
-          <input
-            type="text"
-            name="Peliculas"
-            id="peliculas"
-            placeholder="Ejemplo: la casa de papel"
-            class="js_search-films"
-          />
-          <input type="button" value="Buscar" class="js_button" />
-          <input type="reset" value="resetear" class="js_reset" />
+      <main class="main">
+        <form action="GET" method="post" class="form">
+          <div class="container">
+            <label for="peliculas" class="label"> Busca tu serie favorita : </label>
+            <input
+              type="text"
+              name="Peliculas"
+              id="peliculas"
+              placeholder="Ejemplo: la casa de papel"
+              class="js_search-films search__films"
+            />
+          </div>
+          <div>
+            <input type="button" value="Buscar" class="js_button button" />
+            <input type="reset" value="resetear" class="js_reset button" />
+          </div>
         </form>
 
         <section class="results">
