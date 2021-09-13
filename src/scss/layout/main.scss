@@ -17,12 +17,15 @@
   text-align: center;
 }
 .button {
+  text-transform: uppercase;
+  font-weight: 600;
   color: #5a2f55;
   width: 100px;
   height: 30px;
   margin-left: 10px;
   background-color: #feceba;
   border-radius: 21px;
+
   &:hover {
     color: white;
     transform: scale(1.2);
