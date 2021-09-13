@@ -5,23 +5,25 @@
   flex-direction: column;
 }
 .container {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 .label {
   color: #017f8b;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 .search__films {
+  font-size: 14px;
   height: 26px;
   text-align: center;
 }
 .button {
   text-transform: uppercase;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: #5a2f55;
   width: 100px;
-  height: 30px;
+  height: 40px;
   margin-left: 10px;
   background-color: #feceba;
   border-radius: 21px;

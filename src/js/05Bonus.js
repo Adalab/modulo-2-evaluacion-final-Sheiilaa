@@ -11,9 +11,11 @@
   reset.addEventListener('click', resetFav);
  
   //Haremos el icono de borrar --- Sin funcionalidad
-//  function resetIcon(){
-//     const iconos= document.querySelectorAll('.remove_favoritos');
-//     for(icon of iconos){
-//         icon.addEventListener('click',resetFav);
-//     }
-// }
+  function resetIcon(){
+    
+    const iconos= document.querySelectorAll('.remove_favorito');
+   for (let icon of iconos){
+        console.log(iconos);
+         icon.addEventListener('click',handleClickCover);
+        }
+     }

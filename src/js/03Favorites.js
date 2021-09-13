@@ -25,9 +25,10 @@ function handleClickCover(event) {
      }
     
      printFavorite(); // esta es la función para pintar los favoritos
-    paintFilms();
+     paintFilms();
       //guardo favoritos en LS
     setLocalStorage();
+    resetIcon();
     
    }
   
