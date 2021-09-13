@@ -55,7 +55,7 @@ let favorites=[]
          }
          //Por si la serie no tuviera imagen ponemos 
          if(item.show.image === null){
-            films.innerHTML+=`<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><img class= "image" src=${defaultImage} /></div></li>`;
+            films.innerHTML+=`<li id="${item.show.id}" class="js-list_item" ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><img class= "image" src=${defaultImage} /></div></li>`;
          } else{
            //Si la serie si tiene imagen se tendria que pintar: 
             films.innerHTML += `<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><img class="image" src="${item.show.image.medium}"/></div></li>`;

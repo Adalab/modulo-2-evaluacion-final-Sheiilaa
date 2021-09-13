@@ -29,18 +29,19 @@
     background-color: #c391c5; }
 
 .results {
-  padding-top: 20px;
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .favorites {
-  font-size: 8px;
+  font-size: 14px;
   color: #098f94;
-  width: 20vw; }
+  width: 20vw;
+  margin-left: 20px; }
 
 .films {
   color: #098f94;
-  width: 60vw; }
+  width: 50vw; }
 
 /*# sourceMappingURL=main.css.map */
