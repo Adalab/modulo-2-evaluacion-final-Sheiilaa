@@ -1,9 +1,17 @@
 //Creamos una función para que se nos pinta las caratulas de las series
+function buttonLog(){
+   for(let item of globalData){
+      console.log(item.show.name);
+   }
+
+}
+log.addEventListener('click', buttonLog);
 function paintFilms() {
     //Cogemos la variable de films, para poder escribir por encima
     films.innerHTML='';
    //recorro el array de los datos del fech
    for (let item of globalData) {
+      console.log(item);
       //Buscamos que la serie que estamos pintando este o no en los favoritos del usuario.
       const isValidClass = favorites.find( 
          (favoriteId)=> favoriteId.show.id === item.show.id); 
@@ -20,10 +28,10 @@ function paintFilms() {
       }
       //Por si la serie no tuviera imagen ponemos 
       if(item.show.image === null){
-         films.innerHTML+=`<li id="${item.show.id}" class="js-list_item" ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><img class= "image" src=${defaultImage} /></div></li>`;
+         films.innerHTML+=`<li id="${item.show.id}" class="js-list_item" ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><p class="js_time">${item.show.schedule.time}</p><img class= "image" src=${defaultImage} /></div></li>`;
       } else{
         //Si la serie si tiene imagen se tendria que pintar: 
-         films.innerHTML += `<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><img class="image" src="${item.show.image.medium}"/></div></li>`;
+         films.innerHTML += `<li id="${item.show.id}" class="js-list_item ${isFavorite}"><div class="div_list"><h2 class="tittle_name">${item.show.name}</h2><p class="js_time">${item.show.schedule.time}</p><img class="image" src="${item.show.image.medium}"/></div></li>`;
  }
  listenCover();  
 }

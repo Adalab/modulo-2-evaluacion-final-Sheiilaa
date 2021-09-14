@@ -15,7 +15,7 @@
     
     const iconos= document.querySelectorAll('.remove_favorito');
    for (let icon of iconos){
-        console.log(iconos);
+        // console.log(iconos);
          icon.addEventListener('click',handleClickCover);
         }
      }
