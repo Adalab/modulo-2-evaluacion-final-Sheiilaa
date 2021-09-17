@@ -35,13 +35,6 @@ function getFilms(ev){
   //Listener del fetch 
   button.addEventListener('click', getFilms);
 //Creamos una función para que se nos pinta las caratulas de las series
-function buttonLog(){
-   for(let item of globalData){
-      console.log(item.show.name);
-   }
-
-}
-log.addEventListener('click', buttonLog);
 function paintFilms() {
     //Cogemos la variable de films, para poder escribir por encima
     films.innerHTML='';

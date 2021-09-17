@@ -72,7 +72,7 @@ ul {
 
 .footer {
   height: 10vh;
-  background-color: #041d54;
+  background-color: #091a46;
   left: 0;
   bottom: 0;
   width: 100vw;
@@ -84,6 +84,7 @@ ul {
   align-items: center; }
 
 .page {
+  min-height: 100vh;
   background-color: #091a46;
   font-family: "Varela Round", sans-serif;
   text-align: center;
